@@ -1,0 +1,24 @@
+.MenuMainDiv{
+    width: 20%;
+    padding: 0px 25px;
+    .heading{
+        font-weight: 700;
+        color: #00000026;
+    }
+    .list{
+        display: flex;
+        flex-direction: column;
+        .buttonRound{
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            svg{
+                height: 13px;
+                margin-right: 15px;
+            }
+        }
+    }
+}

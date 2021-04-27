@@ -1,0 +1,49 @@
+.PopularArtistMainDiv {
+    padding-left: 25px;
+    .popularArtistCard {
+        // background-color: #F7F7F7;
+        min-height: 50px;
+        border-radius: 10px;
+        overflow: hidden;
+        .div1,
+        .div3 {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .div2 {
+            width: 60%;
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+        }
+    }
+    .blackBG {
+        background-color: black;
+        height: 40px;
+        width: 40px !important;
+        border-radius: 50%;
+    }
+    .yellowBG {
+        // background-color: #fede57;
+        // height: 62px;
+        .menuIcon {
+            margin: 0;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+    .trackTitle {
+        font-size: 14px;
+        color: #333;
+        font-weight: 600;
+        margin: 0;
+    }
+    .trackSlug {
+        font-size: 10px;
+        color: #333;
+        font-weight: 400;
+        margin: 0;
+    }
+}

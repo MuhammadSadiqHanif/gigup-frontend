@@ -1,0 +1,58 @@
+.PopularGigsMainDiv {
+    padding-left: 25px;
+    .popularGigCard {
+        background-color: #F7F7F7;
+        min-height: 50px;
+        border-radius: 10px;
+        margin: 6px 0px;
+        overflow: hidden;
+        .div1,
+        .div3 {
+            width: 20%;
+        }
+        .div2 {
+            width: 60%;
+        }
+    }
+    .blackBG {
+        background-color: black;
+        height: 62px;
+    }
+    .yellowBG {
+        background-color: #fede57;
+        height: 62px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .gigDate {
+            margin: 0;
+            font-size: 20px;
+        }
+        .gigMonth {
+            margin: 0;
+            margin-top: -10px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    }
+    .trackTitle {
+        font-size: 12px;
+        color: #333;
+        font-weight: 600;
+        margin: 0;
+    }
+    .trackSlug {
+        font-size: 10px;
+        color: #333;
+        font-weight: 400;
+        margin: 0;
+    }
+    .trackdes {
+        font-size: 8px;
+        color: #333;
+        font-weight: 500;
+        margin: 0;
+        text-transform: uppercase;
+    }
+}
