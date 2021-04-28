@@ -12,8 +12,8 @@ function Footer() {
     return (
         <div className="footerMainDiv">
             <div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style={{width: "50%"}} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                <div className="progress">
+                    <div className="progress-bar" role="progressbar" style={{width: "50%"}} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <div className="d-flex contentDiv">
                     <div className="d-flex col-3 mr-5 trackMainDiv">

@@ -1,16 +1,28 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
   // color: #333333;
 }
-.btn-warning{
-  background-color: #FEDE57;
-  border-color: #FEDE57;
+.btn-warning {
+  background-color: #fede57;
+  border-color: #fede57;
 }
 
-.content-center{
+.content-center {
   justify-content: space-between;
 }
-.footerpadding{
+.footerpadding {
   padding-top: 120px;
+}
+.dropdown.open {
+  .dropdown-menu {
+    display: block;
+    font-size: 12px;
+    min-width: 9rem;
+    .dropdown-item {
+      display: block;
+      width: 100%;
+      padding: 0.25rem 10px;
+    }
+  }
 }

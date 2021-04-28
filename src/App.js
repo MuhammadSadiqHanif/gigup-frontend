@@ -9,6 +9,7 @@ import PopularGigs from './component/popularGigs/popularGigs';
 import PopularVenues from './component/popularVenues/popularVenues';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Tablelist from './component/tableList/tablelist';
 function App() {
   return (
     <div>
@@ -17,7 +18,8 @@ function App() {
         <Menu />
         <div className="col-7 bg-black">
           <DiscoverGigs />
-          <LatestGigs/>
+          <LatestGigs />
+          <Tablelist />
         </div>
         <div className="col-3">
           <PopularGigs />

@@ -1,15 +1,49 @@
 import React from 'react'
 import './latestGigs.scss'
 import Slider from "react-slick";
+import SliderRightArrowSvg from '../assests/sliderRightArrowSvg';
+import SliderLeftArrowSvg from '../assests/sliderLeftArrowSvg';
 
 function LatestGigs() {
+    const rightArrow = () => (
+        <div className="arrow" >
+            <SliderRightArrowSvg />
+        </div>
+    )
+    const leftArrow = () => (
+        <div className="arrow" style={{
+            marginRight: "10px"
+        }}>
+            <SliderLeftArrowSvg />
+        </div>
+    )
     const settings = {
         dots: true,
         infinite: false,
         speed: 500,
         slidesToShow: 3,
-        arrow:true,
-        slidesToScroll: 3
+        arrow: true,
+        slidesToScroll: 3,
+        nextArrow: rightArrow(),
+        prevArrow: leftArrow(),
+        appendDots: dots => (
+            <div
+                style={{
+                    // backgroundColor: "#ddd",/
+                    borderRadius: "10px",
+                    padding: "10px"
+                }}
+            >
+                <ul style={{ margin: "0px" }}>{dots} </ul>
+            </div>
+        ),
+        customPaging: i => (
+            <div className="activeDotmain">
+                <div className="activeDot">
+                    {/* {i + 1} */}
+                </div>
+            </div>
+        )
     };
     return (
         <div className="latestGigContainer mt-3">

@@ -1,0 +1,82 @@
+.tableListMainDiv {
+    .bgGrey {
+        background-color: #FCFCFC;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        // padding: 20px 0px;
+        overflow: hidden;
+    }
+    .div1 {
+        width: 10%;
+    }
+    .yellowBG {
+        background-color: #fede57;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .gigDate {
+            margin: 0;
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .gigMonth {
+            margin: 0;
+            margin-top: -5px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+    .div2 {
+        width: 60%;
+        padding: 5px 20px;
+        .name {
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+        .smallText {
+            font-size: 10px;
+            margin: 0;
+            // font-weight: 600;
+            margin-top: 2px;
+        }
+        .midText {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        .BD-top {
+            border-top: 2px solid #fede57;
+        }
+        .space-bt {
+            justify-content: space-between;
+        }
+    }
+    .div3 {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .roundButton {
+            padding: 0px;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg {
+                height: 14px;
+            }
+        }
+        .buyBtn{
+            padding: 6px 12px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 20px;
+        }
+    }
+}

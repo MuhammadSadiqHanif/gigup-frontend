@@ -4,7 +4,7 @@
         width: 100%;
         justify-content: space-between;
     }
-    .gigcard{
+    .gigcard {
         width: 32%;
         padding-right: 10px;
     }
@@ -12,7 +12,7 @@
         border-radius: 10px;
         overflow: hidden;
         min-height: 350px;
-        background-color: #F7F7F7;
+        background-color: #fcfcfc;
         .gigImage {
             height: 150px;
             width: 100%;
@@ -67,6 +67,40 @@
             outline: none;
             font-size: 12px;
             font-weight: 700;
+        }
+    }
+    .activeDotmain {
+        width: 30px;
+        height: 30px;
+        transition: 0.6s;
+    }
+    .activeDot {
+        background-color: #333;
+        width: 5px;
+        transition: 0.6s;
+        height: 5px;
+        border-radius: 50%;
+    }
+    .slick-active {
+        .activeDotmain {
+            margin-left: -17px;
+        }
+        .activeDot {
+            background-color: #fede57;
+            width: 40px;
+            height: 7px;
+            border-radius: 32px !important;
+        }
+    }
+    .slick-dots {
+        ul {
+            margin-top: 20px !important;
+        }
+    }
+    .slick-arrow {
+        svg {
+            height: 30px;
+            color: #00000066;
         }
     }
 }
