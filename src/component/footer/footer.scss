@@ -1,75 +1,132 @@
-.footerMainDiv{
+.footerMainDiv {
     position: fixed;
     width: 100%;
     /* height: 30vh; */
     background: white;
     z-index: 9999;
     bottom: 0;
-    .progress{
+    .progress {
         height: 3px !important;
-        .progress-bar{
-            background: #FEDE57;
+        .progress-bar {
+            background: #fede57;
         }
     }
-    .space-between{
-        justify-content: space-between;   
+    .space-between {
+        justify-content: space-between;
     }
-    .space-around{
-        // justify-content: space-around;   
+    .space-around {
+        // justify-content: space-around;
     }
-    .contentDiv{
-        padding:20px 10px;
-        .trackMainDiv{
+    .contentDiv {
+        padding: 20px 10px;
+        .trackMainDiv {
             align-items: center;
         }
-        .ArtistImage{
+        .ArtistImage {
             height: 40px;
             width: 40px;
             background-color: #333;
             margin-right: 10px;
         }
-        .trackTitle{
+        .trackTitle {
             font-size: 14px;
             color: #333;
             font-weight: 600;
-            margin: 0
+            margin: 0;
         }
-        .trackSlug{
+        .trackSlug {
             font-size: 10px;
             color: #333;
             font-weight: 400;
-            margin: 0
+            margin: 0;
         }
-        .trackTime{
+        .trackTime {
             font-size: 10px;
             color: #333;
             font-weight: 400;
-            margin: 0
+            margin: 0;
         }
-        .right-gap{
+        .right-gap {
             // margin-right: 15px;
         }
-        .Icons{
-            svg{
+        .Icons {
+            svg {
                 height: 15px;
+                cursor: pointer;
             }
         }
-        .lightIcon{
-            svg{
+        .lightIcon {
+            svg {
                 color: #343a40;
             }
         }
-        .playArrow{
+        .playArrow {
             display: flex;
             align-items: center;
             justify-content: center;
-            svg{
+            svg {
                 color: white;
             }
-            background: #FEDE57;
+            background: #fede57;
             height: 40px;
             width: 40px;
             border-radius: 50%;
         }
+    }
+    .rangeInput {
+        height: 2px;
+        width: 80px;
+        outline: none;
+        outline: 0;
+        border: 0;
+        border-radius: 500px;
+        -webkit-appearance: none;
+        max-width: 100%;
+        margin: 20px 0 16px;
+        transition: box-shadow 0.2s ease-in-out;
+        & {
+            overflow: hidden;
+            height: 4px;
+            -webkit-appearance: none;
+            background-color: #ddd;
+        }
+        &::-webkit-slider-runnable-track {
+            height: 4px;
+            -webkit-appearance: none;
+            color: #444;
+            // margin-top: -1px;
+            transition: box-shadow 0.2s ease-in-out;
+        }
+        &::-webkit-slider-thumb {
+            width: 20px;
+            -webkit-appearance: none;
+            height: 20px;
+            cursor: pointer;
+            background: #fede57;
+            box-shadow: -340px 0 0 320px #fede57, inset 0 0 0 20px #fede57;
+            border-radius: 50%;
+            transition: box-shadow 0.2s ease-in-out;
+            margin-top: -10px;
+            position: relative;
+            // top: 1px;
+        }
+        &:active::-webkit-slider-thumb {
+            background: #fede57;
+            box-shadow: -340px 0 0 320px #fede57, inset 0 0 0 3px #fede57;
+        }
+    }
+    // Firefox
+    &::-moz-range-progress {
+        background-color: #43e5f7;
+    }
+    &::-moz-range-track {
+        background-color: #9a905d;
+    }
+    // IE
+    &::-ms-fill-lower {
+        background-color: #43e5f7;
+    }
+    &::-ms-fill-upper {
+        background-color: #9a905d;
     }
 }
