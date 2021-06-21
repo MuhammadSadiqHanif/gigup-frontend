@@ -1,0 +1,249 @@
+.gigGuideContainer {
+    .gigCardMain {
+        width: 35%;
+    }
+    .sp-between {
+        justify-content: space-between;
+    }
+    .f-center {
+        align-items: center;
+        justify-content: center;
+    }
+    .line {
+        border: 2px solid #fede57;
+        width: 95%;
+        height: 0px;
+    }
+    .circle {
+        width: 15px;
+        height: 15px;
+        background: #fede57;
+        border-radius: 50%;
+    }
+    .popularVenuesCard {
+        // background-color: #FCFCFC;
+        width: 100%;
+        min-height: 50px;
+        border-radius: 10px;
+        overflow: hidden;
+        .div1,
+        .div3 {
+            width: 18%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .div2 {
+            width: 70%;
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+        }
+    }
+    .followButton {
+        width: 80px;
+        height: 30px;
+        background: #fede57;
+        border: none;
+        outline: none;
+
+        border-radius: 100px;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+        text-transform: capitalize;
+
+        color: #333333;
+    }
+    .blackBG {
+        background-color: black;
+        height: 50px;
+        width: 50px !important;
+        border-radius: 50%;
+    }
+    .trackTitle {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 6px;
+        /* identical to box height */
+
+        text-transform: uppercase;
+
+        color: #000000;
+    }
+    .trackTitleSlug {
+        line-height: 0px;
+        font-size: 12px;
+    }
+    .descriptionMain {
+        width: 63%;
+        .paraSection {
+            min-height: 180px;
+            padding: 15px;
+            background: rgba(249, 249, 249, 0.5);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            .smallHeading {
+                font-weight: 500;
+                font-size: 12px;
+                color: #666666;
+                margin-bottom: 10px !important;
+            }
+            .paraText {
+                font-size: 14px;
+                text-transform: capitalize;
+                color: #333333;
+                font-weight: 600;
+                margin-bottom: 10px !important;
+            }
+        }
+    }
+    .gigcard {
+        width: 100%;
+        padding-right: 10px;
+    }
+    .gigs {
+        border-radius: 10px;
+        overflow: hidden;
+        min-height: 350px;
+        background-color: #fcfcfc;
+        .gigImage {
+            height: 150px;
+            width: 100%;
+            background-color: black;
+        }
+        .gigContent {
+            padding: 10px 20px;
+            .name {
+                font-weight: 600;
+                margin-bottom: 2px;
+            }
+            .smallText {
+                font-size: 10px;
+                margin: 0;
+                margin-top: 2px;
+            }
+            .midText {
+                font-size: 12px;
+                margin: 0;
+            }
+            .BD-top {
+                border-top: 2px solid #fede57;
+            }
+            .mar-left {
+                margin-left: 10px;
+            }
+            .mar-right {
+                margin-right: 10px;
+            }
+            .b-text {
+                font-size: 10px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            .soldTags {
+                border: none;
+                outline: none;
+                font-size: 11px;
+                font-weight: 600;
+                padding: 4px 12px;
+                width: 29%;
+                border-radius: 5px;
+                margin-right: 5px;
+            }
+        }
+        .gigButton {
+            float: right;
+            margin-right: 17px;
+            margin-bottom: 10px;
+            background: none;
+            border: none;
+            outline: none;
+            font-size: 12px;
+            font-weight: 700;
+        }
+    }
+    .activeDotmain {
+        width: 30px;
+        height: 30px;
+        transition: 0.6s;
+    }
+    .activeDot {
+        background-color: #333;
+        width: 5px;
+        transition: 0.6s;
+        height: 5px;
+        border-radius: 50%;
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: -55px;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: left !important;
+        left: 20%;
+    }
+    .slick-active {
+        .activeDotmain {
+            margin-left: -17px;
+        }
+        .activeDot {
+            background-color: #fede57;
+            width: 40px;
+            height: 7px;
+            border-radius: 32px !important;
+        }
+    }
+    .slick-dots {
+        ul {
+            margin-top: 20px !important;
+        }
+    }
+    .slick-arrow {
+        svg {
+            height: 30px;
+            color: #00000066;
+        }
+    }
+
+    .Buttondiv {
+        // width: 100%;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-around;
+        .btnDiv1{
+            display: flex;
+            justify-content: space-between;
+        }
+        .btnDiv2{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+        .roundButton {
+            padding: 0px;
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            display: flex;
+            margin-left: 4px;
+            justify-content: center;
+            align-items: center;
+            svg {
+                height: 14px;
+            }
+        }
+        .buyBtn {
+            padding: 6px 12px;
+            font-size: 11px;
+            font-weight: 500;
+            text-transform: uppercase;
+            border-radius: 20px;
+            width: 48%;
+        }
+    }
+}
