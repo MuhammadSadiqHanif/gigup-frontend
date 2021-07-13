@@ -21,9 +21,9 @@ function LatestGigs() {
         dots: true,
         infinite: false,
         speed: 500,
-        slidesToShow: 3,
+        // slidesToShow: 3,
         arrow: true,
-        slidesToScroll: 3,
+        // slidesToScroll: 3,
         nextArrow: rightArrow(),
         prevArrow: leftArrow(),
         appendDots: dots => (
@@ -43,12 +43,41 @@ function LatestGigs() {
                     {/* {i + 1} */}
                 </div>
             </div>
-        )
+        ),
+        responsive: [
+            {
+                breakpoint: 2000,
+                settings: {
+
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+
+            },
+            {
+                breakpoint: 768,
+                settings: {
+
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+
+            },
+            {
+                breakpoint: 600,
+                settings: {
+
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+
+            },
+        ]
     };
     return (
         <div className="latestGigContainer mt-3">
             <h4 className="mb-4">Latest Gigs</h4>
-            <div >
+            <div className="sliderDiv">
                 <Slider {...settings} className="latestGigSlider">
                     {[0, 1, 2, 3, 4, 5, 6].map((value, index) => (
                         <div className="gigcard">

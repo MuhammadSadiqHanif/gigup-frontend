@@ -19,9 +19,24 @@
     }
     .contentDiv {
         padding: 20px 10px;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            padding: 10px 20px ​10px;
+             .trackNameDiv {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: flex-start;
+                margin-bottom: 5px;
+                p {
+                    margin-right: 10px;
+                }
+            }
+        }
         .trackMainDiv {
             align-items: center;
         }
+
         .ArtistImage {
             height: 40px;
             width: 40px;

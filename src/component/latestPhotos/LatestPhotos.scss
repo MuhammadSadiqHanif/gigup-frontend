@@ -1,0 +1,54 @@
+.latestPhotoContainer {
+    margin-top: 5px;
+    h4 {
+        // font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        /* identical to box height */
+
+        text-transform: capitalize;
+
+        color: #333333;
+    }
+    .photosDiv {
+        display: flex;
+        justify-content: center;
+    }
+    .photo1Div {
+        width: 23.6%;
+        border-radius: 5px;
+        background-position: center;
+        background-size: cover;
+        padding: 0;
+    }
+    .photo2Div {
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    // margin: 0px 5px;
+    width: 24.2%;
+    padding: 0px 5px;
+
+        div {
+           
+    width: 100%;
+    height: 47.5%;
+
+            border-radius: 5px;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+    .photo4div {
+        width: 39.6%;
+                height: 200px;
+        border-radius: 5px;
+        background-position: center;
+        background-size: cover;
+        padding: 0;
+
+    }
+}

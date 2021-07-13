@@ -1,5 +1,8 @@
 .PopularGigsMainDiv {
     padding-left: 25px;
+    @media screen and (max-width:600px) {
+        padding: 0px;
+    }
     .popularGigCard {
         background-color: #FCFCFC;
         min-height: 50px;

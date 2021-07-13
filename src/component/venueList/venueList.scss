@@ -1,0 +1,186 @@
+.venueListMainDiv {
+    margin-top: 11px;
+    .bgGrey {
+        background-color: #fcfcfc;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        // padding: 20px 0px;
+        overflow: hidden;
+    }
+    .div1 {
+        width: 70px;
+        height: 70px;
+        padding: 11px;
+        background-position: center;
+        background-size: cover;
+        @media screen and (max-width: 1152px) {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .yellowBG {
+        background-color: #fede57;
+        border-radius: 3px 0px 0px 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .gigDate {
+            margin: 0;
+            font-size: 22px;
+            font-weight: 600;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            color: #333333;
+            @media screen and (max-width: 1152px) {
+                font-size: 12px;
+                line-height: 18px;
+                text-align: center;
+                line-height: 18px;
+            }
+        }
+        .gigMonth {
+            margin: 0;
+            margin-top: -5px;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            color: #333333;
+            @media screen and (max-width: 1152px) {
+                font-size: 12px;
+                line-height: 18px;
+                text-align: center;
+            }
+        }
+    }
+    .div2 {
+        width: 48%;
+        padding: 5px 20px;
+        @media screen and (max-width: 768px) {
+            width: 80%;
+        }
+        @media screen and (max-width: 600px) {
+            width: calc(100% - 70px);
+        }
+        .name {
+            font-weight: 600;
+            margin-bottom: 2px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            @media screen and (max-width: 1152px) {
+                font-size: 10px;
+                line-height: 15px;
+                /* identical to box height */
+
+                color: #333333;
+            }
+        }
+        .smallText {
+            font-size: 10px;
+            margin: 0;
+            // font-weight: 600;
+            margin-top: 2px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            @media screen and (max-width: 1152px) {
+                font-size: 5px;
+                line-height: 7px;
+
+                color: #666666;
+            }
+        }
+        .midText {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 0;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            @media screen and (max-width: 1152px) {
+                font-size: 7px;
+                line-height: 10px;
+                /* identical to box height */
+
+                color: #333333;
+            }
+        }
+        .BD-top {
+            border-top: 2px solid #fede57;
+        }
+        .space-bt {
+            justify-content: space-between;
+        }
+    }
+    .div3 {
+        width: 42%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        @media screen and (max-width: 768px) {
+            width: 80%;
+            margin-bottom: 20px;
+
+        }
+        @media screen and (max-width: 600px) {
+            width: 70%;
+
+        }
+
+        .roundButton {
+            padding: 0px;
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            svg {
+                height: 22px;
+            }
+            &.attachedIcon {
+                svg {
+                    position: absolute;
+                    top: 9px;
+                    font-size: 22px;
+                }
+            }
+        }
+        .buyBtn {
+            padding: 6px 12px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 20px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            @media screen and (max-width: 1152px) {
+                font-size: 8px;
+                line-height: 12px;
+                /* identical to box height */
+
+                text-transform: uppercase;
+
+                color: #333333;
+                width: 82px;
+                height: 35px;
+            }
+            &.artist {
+                width: 102px;
+                height: 35px;
+                @media screen and (max-width: 1152px) {
+                    width: 82px;
+                    height: 26px;
+                }
+            }
+        }
+    }
+}

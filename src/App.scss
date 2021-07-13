@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("./component/assests/Poppins/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: Poppins;
+  src: url("./component/assests/Poppins/Poppins-Regular.ttf");
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -24,5 +32,15 @@
       width: 100%;
       padding: 0.25rem 10px;
     }
+  }
+}
+.mainDivApp {
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+.mainCenterDiv{
+  @media screen and (max-width:600px){
+    padding: 0px;
   }
 }

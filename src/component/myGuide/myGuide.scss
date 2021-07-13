@@ -1,0 +1,270 @@
+.myGuidePage {
+    @media screen and (max-width: 600px) {
+        padding: 0px 20px;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin: 0px;
+    }
+    .section1Guide {
+        .col-lg-1,
+        .col-lg-2,
+        .col-lg-3,
+        .col-lg-4,
+        .col-lg-5,
+        .col-lg-6,
+        .col-lg-7,
+        .col-lg-8,
+        .col-lg-9,
+        .col-lg-10,
+        .col-lg-11,
+        .col-lg-12 {
+            padding: 0px;
+        }
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+        }
+    }
+    .heading {
+        margin-bottom: 28px;
+    }
+    .line {
+        border: 2px solid #fede57;
+        width: 95%;
+        height: 0px;
+    }
+    .circle {
+        width: 15px;
+        height: 15px;
+        background: #fede57;
+        border-radius: 50%;
+    }
+    .calenderMain {
+        width: 36.1%;
+    }
+    .react-calendar__navigation__prev2-button,
+    .react-calendar__navigation__next2-button {
+        display: none;
+    }
+    .react-calendar__month-view__weekdays__weekday {
+        padding: 0.5em;
+        font-size: 8px !important;
+        @media screen and (max-width: 600px) {
+            font-size: 14px;
+        }
+    }
+    .react-calendar__navigation__label__labelText--from {
+        font-size: 12px !important;
+        @media screen and (max-width: 600px) {
+            font-size: 14px;
+        }
+    }
+    .react-calendar__month-view__days__day {
+        font-size: 5px !important;
+        @media screen and (min-width: 1153px) {
+            font-size: 10px !important;
+        }
+    }
+    .react-calendar {
+        width: 342px;
+        max-width: 100%;
+        background: white;
+        border: none !important;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: none !important;
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
+    }
+    .react-calendar__navigation__prev-button,
+    .react-calendar__navigation__next-button {
+        font-size: 20px;
+    }
+    .react-calendar__navigation {
+        height: 44px;
+        margin-bottom: 0px !important;
+    }
+    .react-calendar__tile {
+        max-width: 100%;
+        text-align: center;
+        padding: 0px !important;
+        background: none;
+        @media screen and (max-width: 600px) {
+            padding: 1em 1em !important;
+            font-size: 14px !important;
+        }
+    }
+    .react-calendar__tile--active {
+        background: #fede57 !important;
+        border-radius: 110%;
+        color: black !important;
+    }
+    .gigContent2 {
+        padding: 20px 20px !important;
+        width: 36.1%;
+        background-color: #fede57;
+        .name {
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+        .smallText {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 6px;
+            line-height: 9px;
+            @media screen and (max-width: 600px) {
+                font-size: 10px;
+                margin: 0;
+                margin-top: 2px;
+            }
+        }
+        .midText {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 8px;
+            line-height: 12px;
+            text-transform: uppercase;
+            @media screen and (max-width: 600px) {
+                font-size: 12px;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin: 0;
+            }
+        }
+        .BD-top {
+            border-top: 2px solid #333333;
+        }
+        .mar-left {
+            margin-left: 10px;
+        }
+        .mar-right {
+            margin-right: 10px;
+        }
+        .b-text {
+            // font-size: 10px;
+            // font-weight: 700;
+            // text-transform: uppercase;
+        }
+        .soldTags {
+            border: none;
+            outline: none;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 12px;
+            width: 29%;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+        .MyGigWhite {
+            width: 90px;
+            height: 30px;
+            background: #ffffff;
+            border-radius: 100px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 12px;
+            border: none;
+            outline: none;
+            /* identical to box height */
+
+            text-transform: uppercase;
+
+            color: #000000;
+        }
+    }
+    .smallHeading {
+        font-weight: 500;
+        font-size: 12px;
+        color: #666666;
+        margin-bottom: 10px !important;
+    }
+    .calenderMainDiv {
+        border-top: 4px solid #fede57;
+    }
+    .concertImage {
+        width: 41.4%;
+        background-position: center;
+        align-items: center;
+        background-size: cover;
+        margin-top: 32px;
+        @media screen and (max-width: 600px) {
+            width: 100%;
+            height: 178px;
+            margin: 0;
+        }
+        @media screen and (max-width: 600px) {
+            width: 100%;
+            margin-top: 0px;
+            height: 240px;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .calenderMainDIv {
+            flex-direction: column;
+            padding: 0px 20px;
+        }
+        .calenderMain {
+            width: 100%;
+        }
+        .gigContent2 {
+            width: 100%;
+        }
+    }
+}
+.playList {
+    margin-top: 25px;
+    .playListFilter {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .filter1 {
+            background: #f9f9f9;
+            border-radius: 35px;
+            // padding: 11px 15px 19px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 92px;
+            height: 30px;
+            font-size: 12px;
+            margin: 0;
+            font-family: Poppins;
+            svg {
+                margin-right: 7px;
+            }
+            @media screen and (max-width: 1152px) {
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 15px;
+            }
+        }
+        .filter2 {
+            background: #f9f9f9;
+            border-radius: 35px;
+            display: flex;
+            align-items: center;
+            width: 152px;
+            height: 30px;
+            justify-content: center;
+            font-size: 12px;
+            margin: 0;
+            font-family: Poppins;
+            font-style: normal;
+            @media screen and (max-width: 1152px) {
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 15px;
+            }
+            svg {
+                margin-right: 7px;
+            }
+        }
+    }
+}

@@ -8,12 +8,16 @@ import FacebookSvg from '../assests/facebookSvg';
 import AttachSvg from '../assests/attachSvg';
 import DownloadSvg from '../assests/downloadSvg';
 import Calendar from 'react-calendar';
+import LatestGigs from '../latestGigs/latestGigs';
+import LatestPhotos from '../latestPhotos/LatestPhotos';
+import LatestVideo from '../latestVideo/LatestVideo';
+
 function ArtistGuide() {
     const [value, onChange] = useState(new Date());
     return (
         <div className="ArtistGuideContainer mt-3">
             <h4 className="mb-4">UNKANNY - Tiger Eye Bar</h4>
-            <div className="d-flex sp-between">
+            <div className="d-flex sp-between artistGuideSec1">
                 <div className="gigCardMain">
                     <div className="gigcard">
 
@@ -78,7 +82,7 @@ function ArtistGuide() {
                             <div className="circle"></div>
                         </div>
                         <p className="smallHeading">Gig Calender</p>
-                        <div className="d-flex">
+                        <div className="d-flex calenderMainDIv">
                             <div className="calenderMain">
                                 <Calendar
                                     onChange={onChange}
@@ -108,12 +112,15 @@ function ArtistGuide() {
                                     <button className="MyGigWhite">MY GIG</button>
                                 </div>
                             </div>
-
+                           
                         </div>
 
                     </div>
                 </div>
             </div>
+            <LatestGigs />
+            <LatestPhotos />
+            <LatestVideo />
         </div>
     )
 }

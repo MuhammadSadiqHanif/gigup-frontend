@@ -1,4 +1,27 @@
 .latestGigContainer {
+    margin: 40px 0px;
+    .sliderDiv {
+        @media screen and (max-width: 600px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .latestGigSlider{
+                width: 90%;
+            }
+        }
+    }
+    h4 {
+        font-family: Poppins-Medium;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        /* identical to box height */
+
+        text-transform: capitalize;
+
+        color: #333333;
+    }
     .latestGigSlider {
         display: flex;
         width: 100%;
@@ -21,8 +44,16 @@
         .gigContent {
             padding: 10px 20px;
             .name {
-                font-weight: 600;
-                margin-bottom: 2px;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                /* identical to box height */
+
+                text-transform: uppercase;
+
+                color: #333333;
             }
             .smallText {
                 font-size: 10px;
@@ -102,5 +133,18 @@
             height: 30px;
             color: #00000066;
         }
+        &.slick-prev {
+            left: -10px;
+            z-index: 4;
+        }
+        &.slick-next {
+            right: -10px;
+            z-index: 4;
+        }
+    }
+}
+h4{
+    @media screen and (max-width:600px) {   
+        padding: 0px 10px;
     }
 }
